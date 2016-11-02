@@ -1,23 +1,12 @@
-#bamachrn
+#dharmit
 Projects:
   - id: 1
     app-id: dharmit
-    job-id: python
-    git-url: https://github.com/bamachrn/cccp-python
+    job-id: yumupdate
+    git-url: https://github.com/dharmit/cccp-demo
     git-branch: master
-    git-path: demo
-    target-file: Dockerfile.demo
-    desired-tag: release
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
-
-  - id: 2
-    app-id: cockpit
-    job-id: ws
-    git-url: https://github.com/mohammedzee1000/cockpit-container
-    git-branch: centos-cockpit-container
     git-path: /
-    target-file: Dockerfile.centos7
-    desired-tag: latest
+    target-file: Dockerfile
+    desired-tag: release
     notify-email: shahdharmit@gmail.com
     depends-on: null
