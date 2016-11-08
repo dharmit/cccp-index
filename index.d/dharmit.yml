@@ -10,3 +10,14 @@ Projects:
     desired-tag: release
     notify-email: shahdharmit@gmail.com
     depends-on: null
+
+  - id: 2
+    app-id: dharmit
+    job-id: maven33
+    git-url: https://github.com/dharmit/che-java-stacks
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dharmit@gmail.com
+    depends-on: null
