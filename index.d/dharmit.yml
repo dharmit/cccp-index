@@ -19,5 +19,5 @@ Projects:
     git-path: /
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: dharmit@redhat.com
+    notify-email: shahdharmit@gmail.com
     depends-on: null
