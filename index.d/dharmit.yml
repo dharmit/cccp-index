@@ -1,7 +1,7 @@
 #dharmit
 Projects:
   - id: 1
-    app-id: dharmit
+    app-id: simple
     job-id: yumupdate
     git-url: https://github.com/dharmit/cccp-demo
     git-branch: master
