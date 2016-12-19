@@ -7,7 +7,7 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: release
+    desired-tag: 5
     notify-email: shahdharmit@gmail.com
     depends-on: null
 
