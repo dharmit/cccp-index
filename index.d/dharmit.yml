@@ -22,17 +22,6 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: null
 
-  - id: 3
-    app-id: dharmit
-    job-id: centos-python27
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: centos_python/2.7
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
-
   - id: 4
     app-id: dharmit
     job-id: centos-pip-npm-gem
