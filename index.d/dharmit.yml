@@ -21,14 +21,3 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
-
-  - id: 4
-    app-id: dharmit
-    job-id: centos-pip-npm-gem
-    git-url: https://github.com/dharmit/cccp-demo
-    git-branch: master
-    git-path: centos-pip-npm-gem/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
