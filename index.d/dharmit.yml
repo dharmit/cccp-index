@@ -2,12 +2,12 @@
 Projects:
   - id: 1
     app-id: simple
-    job-id: vim
+    job-id: wget
     git-url: https://github.com/dharmit/cccp-demo
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: 5
+    desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
 
