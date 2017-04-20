@@ -10,25 +10,3 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
-
-  - id: 2
-    app-id: dharmit
-    job-id: maven33
-    git-url: https://github.com/dharmit/che-java-stacks
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
-
-  - id: 3
-    app-id: dharmit
-    job-id: golang
-    git-url: https://gitlab.com/kbsingh/container-golang.git
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: 1.7.4-1.el7
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:7
