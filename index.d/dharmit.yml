@@ -11,13 +11,13 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 2
-    app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
-    git-branch: master
-    git-path: 3.8/
-    target-file: Dockerfile
-    desired-tag: 3.8
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:7
+    # - id: 2
+    # - app-id: mattermost
+    # - job-id: mattermost-team
+    # - git-url: https://github.com/jfchevrette/mattermost-openshift
+    # - git-branch: master
+    # - git-path: 3.8/
+    # - target-file: Dockerfile
+    # - desired-tag: 3.8
+    # - notify-email: shahdharmit@gmail.com
+    # - depends-on: centos/centos:7
