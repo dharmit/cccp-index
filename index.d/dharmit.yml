@@ -1,7 +1,7 @@
 #dharmit
 Projects:
   - id: 1
-    app-id: simple
+    app-id: devcloud
     job-id: wget
     git-url: https://github.com/dharmit/cccp-demo
     git-branch: master
@@ -11,13 +11,35 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-    # - id: 2
-    # - app-id: mattermost
-    # - job-id: mattermost-team
-    # - git-url: https://github.com/jfchevrette/mattermost-openshift
-    # - git-branch: master
-    # - git-path: 3.8/
-    # - target-file: Dockerfile
-    # - desired-tag: 3.8
-    # - notify-email: shahdharmit@gmail.com
-    # - depends-on: centos/centos:7
+  - id: 2
+    app-id: devcloud
+    job-id: django
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: Django/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
+  - id: 3
+    app-id: devcloud
+    job-id: maven33
+    git-url: https://github.com/dharmit/che-java-stacks
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
+  - id: 4
+    app-id: devcloud
+    job-id: centos-nodejs
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_nodejs
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
