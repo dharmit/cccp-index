@@ -43,3 +43,15 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 5
+    app-id: devcloud
+    job-id: ansible
+    git-url: https://github.com/dharmit/cccp-demo
+    git-branch: master
+    git-path: ansible/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
