@@ -65,3 +65,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
+
+  - id: 7
+    app-id: che-stacks
+    job-id: spring-boot
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_spring_boot
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
