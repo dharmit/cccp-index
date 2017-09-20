@@ -76,3 +76,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 8
+    app-id: devcloud
+    job-id: outdated
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /outdated
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
