@@ -43,3 +43,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 4
+    app-id: centos
+    job-id: moodle
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-04-03_16-56-49-moodle_container
+    git-path: moodle/centos7
+    target-file: Dockerfile
+    desired-tag: 3.1
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:7
