@@ -12,7 +12,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 2
-    app-id: devcloud
+    app-id: centos
     job-id: django
     git-url: https://github.com/CentOS/CentOS-Dockerfiles
     git-branch: master
@@ -23,7 +23,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 3
-    app-id: devcloud
+    app-id: che-stacks
     job-id: maven33
     git-url: https://github.com/dharmit/che-java-stacks
     git-branch: master
