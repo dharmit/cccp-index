@@ -17,7 +17,7 @@ Projects:
     git-url: https://github.com/CentOS/CentOS-Dockerfiles
     git-branch: master
     git-path: Django/centos7
-    target-file: Dockerfile.does-not-exist
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
