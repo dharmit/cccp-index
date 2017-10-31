@@ -9,7 +9,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: devcloud/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 2
     app-id: devcloud
@@ -33,7 +33,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 8
+  - id: 4
     app-id: devcloud
     job-id: outdated
     git-url: https://github.com/dharmit/dockerfiles
@@ -44,7 +44,7 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 4
+  - id: 5
     app-id: centos
     job-id: moodle
     git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
@@ -54,3 +54,15 @@ Projects:
     desired-tag: 3.1
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:7
+
+  - id: 6
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+  
