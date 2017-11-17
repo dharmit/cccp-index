@@ -7,7 +7,7 @@ Projects:
     git-branch: master
     git-path: wget/
     target-file: Dockerfile
-    desired-tag: nosuchtag
+    desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
