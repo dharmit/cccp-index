@@ -22,28 +22,6 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 4
-    app-id: devcloud
-    job-id: outdated
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: master
-    git-path: /outdated
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
-  - id: 5
-    app-id: centos
-    job-id: moodle
-    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
-    git-branch: 2017-04-03_16-56-49-moodle_container
-    git-path: moodle/centos7
-    target-file: Dockerfile
-    desired-tag: 3.1
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:7
-
   - id: 6
     app-id: centos
     job-id: centos
@@ -55,28 +33,6 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: null
   
-  - id: 7
-    app-id: dharmit
-    job-id: freegeoip
-    git-url: https://github.com/dharmit/freegeoip
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile.centos
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
-  - id: 8
-    app-id: dharmit
-    job-id: nsq
-    git-url: https://github.com/dharmit/nsq
-    git-branch: pipeline
-    git-path: /
-    target-file: Dockerfile.centos
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
   - id: 9
     app-id: centos
     job-id: kubernetes-master
