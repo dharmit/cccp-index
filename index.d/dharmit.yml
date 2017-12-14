@@ -41,7 +41,7 @@ Projects:
     git-path: kubernetes/master
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
   - id: 10
@@ -52,7 +52,7 @@ Projects:
     git-path: kubernetes/apiserver
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@centos.org
+    notify-email: shahdharmit@gmail.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -65,5 +65,82 @@ Projects:
     git-path: demo
     target-file: Dockerfile.demo
     desired-tag: release
-    notify-email: bamachrn@gmail.com
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
+  - id: 12
+    app-id: caddyserver
+    job-id: caddyserver
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: caddy_server/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 13
+    app-id: centos
+    job-id: django
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: Django/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+  
+  - id: 14
+    app-id: centos
+    job-id: etherpad
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: etherpad/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+  
+  - id: 15
+    app-id: centos
+    job-id: firefox
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: firefox/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+  
+  - id: 16
+    app-id: centos
+    job-id: freeipa
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: freeipa/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+  
+  - id: 17
+    app-id: centos
+    job-id: httpd
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: httpd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+  
+  - id: 18
+    app-id: centos
+    job-id: mariadb
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: mariadb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
