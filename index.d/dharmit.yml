@@ -332,3 +332,17 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: sclo/nodejs-6-centos7:latest
+
+  - id: 36
+    app-id: centos
+    job-id: nginx-18-centos7
+    git-url: https://github.com/sclorg/nginx-container.git
+    git-branch: master
+    git-path: 1.8/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahharmit@gmail.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
