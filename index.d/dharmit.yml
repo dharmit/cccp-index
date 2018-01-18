@@ -369,3 +369,15 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: dharmit/base
     build_context: ./
+
+  - id: 39
+    app-id: dmick
+    job-id: ceph-daemon-luminous-centos-7
+    git-url: http://github.com/dmick/ceph-container
+    git-branch: build-master-luminous-centos-7
+    git-path: daemon
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: null
